@@ -48,14 +48,14 @@
 
 					#### [James Burke](http://jrburke.com) | [github](https://github.com/jrburke) | [twitter](https://twitter.com/jrburke)
 
-					[http://jrburke.com/talks/appday/](http://jrburke.com/talks/appday/)
+					[http://jrburke.com/talks/vanappday](http://jrburke.com/talks/vanappday)
 				</script></section>
 
 				<section data-markdown><script type="text/template">
 					### Single page. Mobile. Web app.
 
 					* App feel
-					* Mobile is personal computing
+					* Mobile is personal
 				</script></section>
 
 				<section data-markdown><script type="text/template">
@@ -97,22 +97,29 @@
 				</script></section>
 
 				<section data-markdown><script type="text/template">
-					### Easy SDK: Firefox
+					### [Easy SDK: Firefox Aurora](http://www.mozilla.org/en-US/firefox/aurora/)
 
-					* dev tools. firebug
-					* responsive view
+					```
+					/Applications/Aurora.app/Contents/MacOS/firefox -P dev &
+					```
+				</script></section>
+
+				<section data-markdown><script type="text/template">
+					### [Easy SDK: Firefox Aurora](http://www.mozilla.org/en-US/firefox/aurora/)
+
+					* [dev tools](https://developer.mozilla.org/en-US/docs/Tools)
+					* [responsive view](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_View)
 					* Try in other mobile browsers
-					* Fx simulator
+					* [Fx simulator](http://people.mozilla.org/~myk/r2d2b2g/)
 				</script></section>
 
 				<section data-markdown><script type="text/template">
 					### Device APIs, deployment
 
-					* Firefox OS: packaged apps, or use appcache+domain
-					* Chrome Web Store
-					* iOS: Web, native (phonegap)
-					* Android: Web, native (phonegap), Firefox App
-
+					* **[Firefox OS](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS)**: Web, [packaged apps](https://developer.mozilla.org/en-US/docs/Apps/Packaged_apps)
+					* **Chrome**: Web, [Store](https://developers.google.com/chrome/web-store/)
+					* **iOS**: Web, [native](http://phonegap.com/)
+					* **Android**: Web, [native](http://phonegap.com/), [Firefox App](https://developer.mozilla.org/en-US/docs/Apps/Apps_for_Android)
 				</script></section>
 
 				<section data-markdown><script type="text/template">
@@ -133,6 +140,42 @@
 					volo create proj owner/repo/v2.1
 					```
 				</script></section>
+
+				<section data-markdown><script type="text/template">
+					### [requirejs](http://requirejs.org/docs/api.html)
+
+					```javascript
+					define(function (require) {
+						var relative = require('./relative'),
+							lib = require('lib');
+
+						return {
+							doSomething: function () {}
+						};
+					});
+					```
+				</script></section>
+
+				<section data-markdown><script type="text/template">
+					### [requirejs](http://requirejs.org/docs/api.html)
+
+					```javascript
+					require(['app', 'other'], function (app, other) {
+						//Use app and other.
+					});
+					```
+				</script></section>
+
+				<section data-markdown><script type="text/template">
+					### [alameda: alt requirejs](https://github.com/requirejs/alameda)
+
+					modern browsers, promise module
+
+					```
+					volo add requirejs/alameda
+					```
+				</script></section>
+
 
 			</div>
 
